@@ -11,7 +11,16 @@ local function findGameId()
 
     -- Retourne l'ID trouvé ou nil s'il n'a pas été trouvé
     return gameId
-end
+    local function findGameId()
+    -- Insérez ici le code pour effectuer la recherche de l'ID de jeu, par exemple :
+    local gameId = "3260590327" -- Exemple d'ID trouvé
+
+    -- Retourne l'ID trouvé ou nil s'il n'a pas été trouvé
+    return gameId
+ end
+  end
+
+
 
 -- Fonction pour exécuter le script en fonction de l'ID de jeu
 local function executeScript(gameId)
