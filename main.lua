@@ -30,9 +30,11 @@ if gameIDs[gameID] then
     if gameID == 3260590327 then -- Tower Defense Simulator
         loadstring(game:HttpGet("https://raw.githubusercontent.com/frrp9/auto-farm-drems-/main/Tower_Defense_Simulator.lua"))()
     elseif gameID == 6284583030 then -- Pet Simulator X!
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/frrp9/auto-farm-drems-/main/pet%20sim.lua"))()
         -- Script pour Pet Simulator X!
         
     elseif gameID == 3101667897 then -- Legends Of Speed ⚡
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/frrp9/auto-farm-drems-/main/speedlegends.lua"))()
         -- Script pour Legends Of Speed ⚡
         
     end
