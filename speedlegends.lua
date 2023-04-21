@@ -26,7 +26,7 @@ Title.BackgroundColor3 = Color3.fromRGB(65, 65, 65)
 Title.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Title.Size = UDim2.new(0, 295, 0, 51)
 Title.Font = Enum.Font.SourceSans
-Title.Text = "Legends Of Speed OP FARM"
+Title.Text = "Drems hub"
 Title.TextColor3 = Color3.fromRGB(0, 0, 0)
 Title.TextSize = 14.000
 
