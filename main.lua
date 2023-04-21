@@ -1,44 +1,41 @@
--- Fonction pour afficher le menu de chargement
-local function showLoadingMenu()
-    print("Chargement en cours...")
-    -- Ajoutez ici tout code pour afficher un menu de chargement à l'utilisateur
-end
-
--- Fonction pour rechercher l'ID de jeu
-local function findGameId()
-    -- Insérez ici le code pour effectuer la recherche de l'ID de jeu, par exemple :
-    local gameId = "2753915549" -- Exemple d'ID trouvé
-
-    -- Retoune l'ID trouvé ou nil s'il n'a pas été trouvé
-    return gameId
-    local funtion findGameId()
-    -- Insérez ici le code pour effectuer la recherche de l'ID de jeu, par exemple :
-    local gameId = "3260590327" -- Exemple d'ID trouvé
-
-    -- Retourne lID trouvé ou nil s'il n'a pas été trouvé
-    return gameId
- end
-  end
+-- Tower Defense Simulator : 3260590327
+-- Pet Simulator X! : 6284583030
+-- Legends Of Speed ⚡: 3101667897
 
 
 
--- Fonction pour exécuter lescript en fonction de l'ID de jeu
-local function executeScript(gam== "3260590327" then
-        -- Si l'D du jeu est 3260599" then
-        -- Si l'ID du jeu est 2753915549, exécutez le script suivant
-        loadtring(game:HttpGeta palide")
+local gameIDs = {
+    [3260590327] = "Tower Defense Simulator",
+    [6284583030] = "Pet Simulator X!",
+    [3101667897] = "Legends Of Speed ⚡"
+}
+
+local gameID = tonumber(game:GetService("HttpService"):GetAsync("https://games.roblox.com/v1/games/" .. game.PlaceId .. "/root"))
+
+if gameIDs[gameID] then
+    game:GetService("ReplicatedFirst"):WaitForChild("LoadingScreenGui").Enabled = true
+    game:GetService("ReplicatedFirst").LoadingScreenGui.LoadingText.Text = "Loading..."
+    wait(1)
+    game:GetService("ReplicatedFirst").LoadingScreenGui.LoadingText.Text = "Loading.."
+    wait(1)
+    game:GetService("ReplicatedFirst").LoadingScreenGui.LoadingText.Text = "Loading."
+    wait(1)
+    game:GetService("ReplicatedFirst").LoadingScreenGui.LoadingText.Text = "Loading"
+    wait(1)
+    game:GetService("ReplicatedFirst").LoadingScreenGui.LoadingText.Text = "Loading.."
+    wait(1)
+    game:GetService("ReplicatedFirst").LoadingScreenGui.LoadingText.Text = "Loading..."
+    wait(1)
+    
+    if gameID == 3260590327 then -- Tower Defense Simulator
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/frrp9/auto-farm-drems-/main/Tower_Defense_Simulator.lua"))()
+    elseif gameID == 6284583030 then -- Pet Simulator X!
+        -- Script pour Pet Simulator X!
+        
+    elseif gameID == 3101667897 then -- Legends Of Speed ⚡
+        -- Script pour Legends Of Speed ⚡
+        
     end
+else
+    game:GetService("Players").LocalPlayer:Kick("Votre jeu n'est pas supporté par nos scripts.")
 end
-
--- Fonction pnt et l'exécution de script
-local function main()
-    showLoadingMnu()
-    local gameId = findGameId()
-    if gameId then
-        executeScript(gameId)
-    else
-        print("Impossible de trouver l'ID du jeu")
-    end
-end
-
-main() -- Lancer la fonction principale
